@@ -1,4 +1,4 @@
-<img src="https://github.com/dfbacon/iOS_Projects/blob/master/swift_logo.png" alt="swift logo">
+<img src="https://github.com/dfbacon/iOS_Projects/blob/master/swift_logo.png" alt="swift logo" width="250" height="250">
 
 iOS Projects
 ============
