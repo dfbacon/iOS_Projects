@@ -5,6 +5,8 @@
 iOS Projects
 ============
 
+All projects completed and compiled on Xcode Version 8.3.2 (8E2002).
+
 Miracle Pills
 -------------
 
