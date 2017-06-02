@@ -5,6 +5,8 @@
 iOS Projects
 ============
 
+All projects completed and compiled on Xcode Version 8.3.2 (8E2002).
+
 Projects and assignments completed following instruction from the ["iOS 10 & Swift 3: From Beginner to Paid Professional"](https://www.udemy.com/devslopes-ios10/) course as taught by Devslopes.
 
 All assignments and projects completed by me, [Daniel Bacon](https://github.com/dfbacon).
