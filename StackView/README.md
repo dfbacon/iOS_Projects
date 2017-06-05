@@ -7,10 +7,10 @@ iOS Projects
 
 All projects completed and compiled on Xcode Version 8.3.2 (8E2002).
 
-ScrollView
-----------
+StackView
+---------
 
-This is the Scroll View iOS app. 
+This is the Stack View iOS app. 
 
 Scroll View is designed to introduce the concepts of stack view in Swift 3 and Xcode 8.
 
