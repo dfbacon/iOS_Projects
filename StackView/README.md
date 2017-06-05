@@ -10,7 +10,7 @@ All projects completed and compiled on Xcode Version 8.3.2 (8E2002).
 StackView
 ---------
 
-This is the Stack View iOS app. 
+This is the StackView iOS app. 
 
 StackView is designed to introduce the concepts of stacking views in Swift 3 and Xcode 8.
 
