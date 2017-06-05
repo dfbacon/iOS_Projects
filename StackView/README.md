@@ -12,7 +12,7 @@ StackView
 
 This is the Stack View iOS app. 
 
-Scroll View is designed to introduce the concepts of stack view in Swift 3 and Xcode 8.
+StackView is designed to introduce the concepts of stacking views in Swift 3 and Xcode 8.
 
 Projects and assignments completed following instruction from the ["iOS 10 & Swift 3: From Beginner to Paid Professional"](https://www.udemy.com/devslopes-ios10/) course as taught by Devslopes.
 
