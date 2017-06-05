@@ -10,7 +10,7 @@ All projects completed and compiled on Xcode Version 8.3.2 (8E2002).
 SwapScreens
 -----------
 
-This is the Swap Screens iOS app. 
+This is the SwapScreens iOS app. 
 
 SwapScreens is designed to introduce the concepts of swapping screens in Swift 3 and Xcode 8.
 
