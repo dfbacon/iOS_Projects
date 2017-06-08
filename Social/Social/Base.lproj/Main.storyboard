@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +21,122 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgi-KA-bWp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopes-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ues-NB-UBp">
+                                        <rect key="frame" x="112" y="28" width="150" height="94"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ues-NB-UBp" firstAttribute="centerX" secondItem="rgi-KA-bWp" secondAttribute="centerX" id="3Cm-Ae-d60"/>
+                                    <constraint firstAttribute="height" constant="150" id="OUJ-c8-rII"/>
+                                    <constraint firstItem="ues-NB-UBp" firstAttribute="centerY" secondItem="rgi-KA-bWp" secondAttribute="centerY" id="S7f-w4-gRw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Okh-No-85b">
+                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New accounts created automatically" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6c-LG-SF9">
+                                        <rect key="frame" x="0.0" y="46" width="375" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="yFC-F7-aVH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="0.54000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.77254901960784317" green="0.792156862745098" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="H9S-8G-tXm"/>
+                                    <constraint firstItem="q6c-LG-SF9" firstAttribute="leading" secondItem="Okh-No-85b" secondAttribute="leading" id="Mgt-Dy-A0y"/>
+                                    <constraint firstAttribute="bottom" secondItem="q6c-LG-SF9" secondAttribute="bottom" constant="8" id="Vfz-BV-G7M"/>
+                                    <constraint firstAttribute="trailing" secondItem="q6c-LG-SF9" secondAttribute="trailing" id="Z2b-oi-XLD"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktA-Dv-Ghv">
+                                <rect key="frame" x="16" y="165" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Lfy-Va-65a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="0.87" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEL-kf-Kkn">
+                                <rect key="frame" x="127" y="236" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.30588235294117649" green="0.396078431372549" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="3yg-rJ-cJI"/>
+                                    <constraint firstAttribute="width" constant="120" id="aR6-Jw-HfG"/>
+                                </constraints>
+                                <state key="normal" image="f"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b5k-OR-jm7">
+                                <rect key="frame" x="48" y="431" width="279" height="112"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Vm-1t-6uz">
+                                        <rect key="frame" x="0.0" y="0.0" width="279" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="7zc-nO-Ldl"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uc8-00-E7R">
+                                        <rect key="frame" x="0.0" y="40" width="279" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="pnf-LI-Xc4"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLx-nF-hIz">
+                                        <rect key="frame" x="0.0" y="80" width="279" height="32"/>
+                                        <color key="backgroundColor" red="0.90196078431372551" green="0.31764705882352939" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="QQ8-BA-8if"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="17"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cEL-kf-Kkn" firstAttribute="top" secondItem="ktA-Dv-Ghv" secondAttribute="bottom" constant="50" id="5cT-Jr-kqy"/>
+                            <constraint firstItem="rgi-KA-bWp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7kT-fY-XUG"/>
+                            <constraint firstAttribute="trailing" secondItem="Okh-No-85b" secondAttribute="trailing" id="EN4-rS-EEK"/>
+                            <constraint firstItem="b5k-OR-jm7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="J8M-4B-veW"/>
+                            <constraint firstItem="cEL-kf-Kkn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OnN-tg-2LB"/>
+                            <constraint firstItem="b5k-OR-jm7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RT6-b6-a5C"/>
+                            <constraint firstAttribute="trailing" secondItem="rgi-KA-bWp" secondAttribute="trailing" id="TGX-gt-FXa"/>
+                            <constraint firstItem="b5k-OR-jm7" firstAttribute="top" secondItem="cEL-kf-Kkn" secondAttribute="bottom" constant="75" id="Vaq-Fo-7Bf"/>
+                            <constraint firstItem="rgi-KA-bWp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fPD-jH-WPM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Okh-No-85b" secondAttribute="bottom" id="hs1-yv-x3R"/>
+                            <constraint firstItem="ktA-Dv-Ghv" firstAttribute="top" secondItem="rgi-KA-bWp" secondAttribute="bottom" constant="15" id="jPe-im-cvO"/>
+                            <constraint firstItem="ktA-Dv-Ghv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kSd-ix-7Fa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b5k-OR-jm7" secondAttribute="trailing" constant="32" id="rHM-6e-hlk"/>
+                            <constraint firstItem="ktA-Dv-Ghv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wDY-8v-ZCH"/>
+                            <constraint firstItem="Okh-No-85b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xgX-zl-pEe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="devslopes-logo" width="150" height="94"/>
+        <image name="f" width="352" height="328"/>
+    </resources>
 </document>
