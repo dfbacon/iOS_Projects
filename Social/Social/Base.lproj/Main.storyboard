@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgi-KA-bWp">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgi-KA-bWp" customClass="ModificationView" customModule="Social" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopes-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ues-NB-UBp">
@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="592" width="375" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New accounts created automatically" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6c-LG-SF9">
-                                        <rect key="frame" x="0.0" y="46" width="375" height="21"/>
+                                        <rect key="frame" x="0.0" y="27" width="375" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="yFC-F7-aVH"/>
                                         </constraints>
@@ -53,7 +53,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="H9S-8G-tXm"/>
                                     <constraint firstItem="q6c-LG-SF9" firstAttribute="leading" secondItem="Okh-No-85b" secondAttribute="leading" id="Mgt-Dy-A0y"/>
-                                    <constraint firstAttribute="bottom" secondItem="q6c-LG-SF9" secondAttribute="bottom" constant="8" id="Vfz-BV-G7M"/>
+                                    <constraint firstAttribute="bottom" secondItem="q6c-LG-SF9" secondAttribute="bottom" constant="27" id="Vfz-BV-G7M"/>
                                     <constraint firstAttribute="trailing" secondItem="q6c-LG-SF9" secondAttribute="trailing" id="Z2b-oi-XLD"/>
                                 </constraints>
                             </view>
@@ -66,7 +66,7 @@
                                 <color key="textColor" white="0.0" alpha="0.87" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEL-kf-Kkn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEL-kf-Kkn" customClass="RoundBtn" customModule="Social" customModuleProvider="target">
                                 <rect key="frame" x="127" y="236" width="120" height="120"/>
                                 <color key="backgroundColor" red="0.30588235294117649" green="0.396078431372549" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -78,7 +78,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b5k-OR-jm7">
                                 <rect key="frame" x="48" y="431" width="279" height="112"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Vm-1t-6uz">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Vm-1t-6uz" customClass="ModificationTextField" customModule="Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="279" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="7zc-nO-Ldl"/>
@@ -87,7 +87,7 @@
                                         <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uc8-00-E7R">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uc8-00-E7R" customClass="ModificationTextField" customModule="Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="40" width="279" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="pnf-LI-Xc4"/>
@@ -96,7 +96,7 @@
                                         <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLx-nF-hIz">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLx-nF-hIz" customClass="ModificationBtn" customModule="Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="80" width="279" height="32"/>
                                         <color key="backgroundColor" red="0.90196078431372551" green="0.31764705882352939" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                         <constraints>
