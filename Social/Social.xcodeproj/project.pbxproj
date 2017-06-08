@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		669B0DFB3FAA52F127605B71 /* Pods_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62AFB80ADE61E209722092C4 /* Pods_Social.framework */; };
 		774B87041EE9D20700B8521C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B87031EE9D20700B8521C /* AppDelegate.swift */; };
-		774B87061EE9D20700B8521C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B87051EE9D20700B8521C /* ViewController.swift */; };
+		774B87061EE9D20700B8521C /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B87051EE9D20700B8521C /* SignInVC.swift */; };
 		774B87091EE9D20700B8521C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774B87071EE9D20700B8521C /* Main.storyboard */; };
 		774B870B1EE9D20700B8521C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774B870A1EE9D20700B8521C /* Assets.xcassets */; };
 		774B870E1EE9D20700B8521C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774B870C1EE9D20700B8521C /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		62AFB80ADE61E209722092C4 /* Pods_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		774B87001EE9D20600B8521C /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774B87031EE9D20700B8521C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		774B87051EE9D20700B8521C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		774B87051EE9D20700B8521C /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		774B87081EE9D20700B8521C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		774B870A1EE9D20700B8521C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		774B870D1EE9D20700B8521C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +59,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		772D7CF01EE9D8CE00DCDFEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		772D7CF11EE9D8E200DCDFEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		772D7CF21EE9D8F100DCDFEE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				774B87051EE9D20700B8521C /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		774B86F71EE9D20600B8521C = {
 			isa = PBXGroup;
 			children = (
@@ -80,8 +102,10 @@
 		774B87021EE9D20600B8521C /* Social */ = {
 			isa = PBXGroup;
 			children = (
+				772D7CF21EE9D8F100DCDFEE /* Controller */,
+				772D7CF11EE9D8E200DCDFEE /* View */,
+				772D7CF01EE9D8CE00DCDFEE /* Model */,
 				774B87031EE9D20700B8521C /* AppDelegate.swift */,
-				774B87051EE9D20700B8521C /* ViewController.swift */,
 				774B87071EE9D20700B8521C /* Main.storyboard */,
 				774B870A1EE9D20700B8521C /* Assets.xcassets */,
 				774B870C1EE9D20700B8521C /* LaunchScreen.storyboard */,
@@ -216,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				774B87061EE9D20700B8521C /* ViewController.swift in Sources */,
+				774B87061EE9D20700B8521C /* SignInVC.swift in Sources */,
 				774B87041EE9D20700B8521C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +409,7 @@
 				774B87141EE9D20700B8521C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
