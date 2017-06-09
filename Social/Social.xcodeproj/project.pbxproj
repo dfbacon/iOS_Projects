@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		051860631EEB36E4004389AE /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051860621EEB36E4004389AE /* FeedVC.swift */; };
+		051860651EEB4859004389AE /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051860641EEB4859004389AE /* RoundView.swift */; };
 		052257B31EE9EB7F0020AE48 /* ModificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052257B21EE9EB7F0020AE48 /* ModificationView.swift */; };
 		052257B61EE9EC2A0020AE48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052257B51EE9EC2A0020AE48 /* Constants.swift */; };
 		052257B81EE9EE810020AE48 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052257B71EE9EE810020AE48 /* RoundBtn.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		051860621EEB36E4004389AE /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		051860641EEB4859004389AE /* RoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 		052257B21EE9EB7F0020AE48 /* ModificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModificationView.swift; sourceTree = "<group>"; };
 		052257B51EE9EC2A0020AE48 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		052257B71EE9EE810020AE48 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				052257B71EE9EE810020AE48 /* RoundBtn.swift */,
 				052257B91EE9F0230020AE48 /* ModificationTextField.swift */,
 				052257BB1EE9F14D0020AE48 /* ModificationBtn.swift */,
+				051860641EEB4859004389AE /* RoundView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				051860631EEB36E4004389AE /* FeedVC.swift in Sources */,
 				052257BA1EE9F0230020AE48 /* ModificationTextField.swift in Sources */,
 				052257B31EE9EB7F0020AE48 /* ModificationView.swift in Sources */,
+				051860651EEB4859004389AE /* RoundView.swift in Sources */,
 				052257B61EE9EC2A0020AE48 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
