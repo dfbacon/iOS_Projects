@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
 
@@ -19,13 +20,8 @@ class SignInVC: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    func firebaseAuth(_ credential: FIRAuthCredential) {
-        FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
+    func firebaseAuth(_ credential: AuthCredential) {
+        Auth.auth().signIn(with: credential, completion: { (user, error) in
             if error != nil {
                 print("DANIEL: Unable to authenticate with Firebase - \(String(describing: error))")
             } else {
@@ -38,11 +34,11 @@ class SignInVC: UIViewController {
         
         // Check for existence of text in both text fields
         if let email = emailText.text, let pwd = passwordText.text {
-            FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, Error) in
+            Auth.auth().signIn(withEmail: email, password: pwd, completion: { (user, Error) in
                 if Error == nil {
                     print("DANIEL: User authenticated with Firebase")
                 } else {
-                    FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: {(user, Error) in
+                    Auth.auth().createUser(withEmail: email, password: pwd, completion: {(user, Error) in
                         if Error != nil {
                             print("DANIEL: Unable to authenticate with Firebase - \(String(describing: Error))")
                         } else {
