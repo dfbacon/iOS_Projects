@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		051860631EEB36E4004389AE /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051860621EEB36E4004389AE /* FeedVC.swift */; };
 		052257B31EE9EB7F0020AE48 /* ModificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052257B21EE9EB7F0020AE48 /* ModificationView.swift */; };
 		052257B61EE9EC2A0020AE48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052257B51EE9EC2A0020AE48 /* Constants.swift */; };
 		052257B81EE9EE810020AE48 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052257B71EE9EE810020AE48 /* RoundBtn.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		051860621EEB36E4004389AE /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		052257B21EE9EB7F0020AE48 /* ModificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModificationView.swift; sourceTree = "<group>"; };
 		052257B51EE9EC2A0020AE48 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		052257B71EE9EE810020AE48 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				774B87051EE9D20700B8521C /* SignInVC.swift */,
+				051860621EEB36E4004389AE /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				052257B81EE9EE810020AE48 /* RoundBtn.swift in Sources */,
 				774B87041EE9D20700B8521C /* AppDelegate.swift in Sources */,
 				052257BC1EE9F14D0020AE48 /* ModificationBtn.swift in Sources */,
+				051860631EEB36E4004389AE /* FeedVC.swift in Sources */,
 				052257BA1EE9F0230020AE48 /* ModificationTextField.swift in Sources */,
 				052257B31EE9EB7F0020AE48 /* ModificationView.swift in Sources */,
 				052257B61EE9EC2A0020AE48 /* Constants.swift in Sources */,
