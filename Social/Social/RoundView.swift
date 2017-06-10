@@ -26,4 +26,10 @@ class RoundView: UIImageView {
         layer.cornerRadius = self.frame.width / 2
     }
     
+//    override func draw(_ rect: CGRect) {
+//        super.draw(rect)
+//        
+//        layer.cornerRadius = self.frame.width / 2
+//    }
+
 }

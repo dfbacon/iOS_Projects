@@ -196,7 +196,6 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="65" height="59"/>
                                                 <color key="backgroundColor" red="0.7725490196" green="0.79215686269999996" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="58" id="7zH-cM-txX"/>
                                                     <constraint firstAttribute="width" constant="65" id="o7l-Eb-3bc"/>
                                                 </constraints>
                                             </imageView>
@@ -211,7 +210,6 @@
                                                 <color key="backgroundColor" red="0.90196078430000004" green="0.31764705879999999" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="54" id="JR9-Ow-F5E"/>
-                                                    <constraint firstAttribute="height" constant="54" id="aKD-GU-qZK"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="add-post"/>
                                             </button>
@@ -249,7 +247,7 @@
                                                                 <constraint firstAttribute="width" constant="64" id="i98-5b-faF"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9x-00-Drl">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crazed Man" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9x-00-Drl">
                                                             <rect key="frame" x="77" y="27.5" width="195" height="19.5"/>
                                                             <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
                                                             <color key="textColor" red="0.90196078430000004" green="0.31764705879999999" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
