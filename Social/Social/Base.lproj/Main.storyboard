@@ -225,16 +225,16 @@
                                     <constraint firstItem="pfx-uh-rxx" firstAttribute="leading" secondItem="dni-6b-Esm" secondAttribute="leading" constant="8" id="lUL-bC-5Af"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="370" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BFc-Cv-zgY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="370" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BFc-Cv-zgY">
                                 <rect key="frame" x="0.0" y="182" width="375" height="485"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="370" id="Coe-sM-xEG">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="370" id="Coe-sM-xEG" customClass="PostCell" customModule="Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="370"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Coe-sM-xEG" id="6z0-bJ-7Ow">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="369.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="370"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-qL-OeH" customClass="ModificationView" customModule="Social" customModuleProvider="target">
@@ -285,7 +285,7 @@
                                                                 <constraint firstItem="bgH-2s-zCM" firstAttribute="centerY" secondItem="r0w-0D-bY4" secondAttribute="centerY" id="s34-c7-uVx"/>
                                                             </constraints>
                                                         </stackView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="167-EW-q82" customClass="RoundView" customModule="Social" customModuleProvider="target">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="167-EW-q82">
                                                             <rect key="frame" x="274" y="5" width="64" height="64"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="64" id="dmg-rx-VI7"/>
@@ -308,6 +308,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.90980392156862744" green="0.91764705882352937" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="D4d-qL-OeH" firstAttribute="top" secondItem="6z0-bJ-7Ow" secondAttribute="top" constant="8" id="Dqd-Lh-Yhp"/>
                                                 <constraint firstAttribute="trailing" secondItem="D4d-qL-OeH" secondAttribute="trailing" constant="16" id="DxC-tJ-OgK"/>
@@ -315,11 +316,18 @@
                                                 <constraint firstItem="D4d-qL-OeH" firstAttribute="leading" secondItem="6z0-bJ-7Ow" secondAttribute="leading" constant="16" id="l5b-xC-zQT"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caption" destination="gPc-dt-ODX" id="mWf-Ou-0NR"/>
+                                            <outlet property="likes" destination="g81-rP-aW9" id="AL8-fQ-GJW"/>
+                                            <outlet property="postImage" destination="oUU-O7-j4s" id="ZWf-10-jxn"/>
+                                            <outlet property="profileImage" destination="o6T-yl-lbW" id="ppe-xH-tRL"/>
+                                            <outlet property="userNameLabel" destination="i9x-00-Drl" id="kQQ-T0-p6e"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.91764705879999997" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="dni-6b-Esm" firstAttribute="top" secondItem="E3q-xk-ZzD" secondAttribute="bottom" constant="16" id="2og-wD-0Ig"/>
                             <constraint firstAttribute="trailing" secondItem="dni-6b-Esm" secondAttribute="trailing" constant="16" id="3yk-OS-ZBf"/>
@@ -339,6 +347,7 @@
                     </view>
                     <connections>
                         <outlet property="signOutBtn" destination="MyQ-C9-4IZ" id="38Z-Q0-WFC"/>
+                        <outlet property="tableView" destination="BFc-Cv-zgY" id="8XI-Gu-EgE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u87-t8-kD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
