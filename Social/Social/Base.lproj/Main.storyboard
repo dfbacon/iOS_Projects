@@ -225,18 +225,6 @@
                                     <constraint firstItem="pfx-uh-rxx" firstAttribute="leading" secondItem="dni-6b-Esm" secondAttribute="leading" constant="8" id="lUL-bC-5Af"/>
                                 </constraints>
                             </view>
-<<<<<<< HEAD
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="370" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BFc-Cv-zgY">
-                                <rect key="frame" x="0.0" y="182" width="414" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="370" id="Coe-sM-xEG">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="370"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Coe-sM-xEG" id="6z0-bJ-7Ow">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="369"/>
-=======
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="370" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BFc-Cv-zgY">
                                 <rect key="frame" x="0.0" y="182" width="375" height="485"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -247,7 +235,6 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Coe-sM-xEG" id="6z0-bJ-7Ow">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="370"/>
->>>>>>> feedTable
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-qL-OeH" customClass="ModificationView" customModule="Social" customModuleProvider="target">
