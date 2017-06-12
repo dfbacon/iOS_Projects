@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -171,7 +171,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pna-Xi-PKP">
-                                        <rect key="frame" x="175" y="21" width="64" height="36"/>
+                                        <rect key="frame" x="175" y="21.333333333333336" width="64" height="35.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="31"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -226,19 +226,19 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="370" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BFc-Cv-zgY">
-                                <rect key="frame" x="0.0" y="182" width="375" height="485"/>
+                                <rect key="frame" x="0.0" y="182" width="414" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="370" id="Coe-sM-xEG" customClass="PostCell" customModule="Social" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="370"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="370"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Coe-sM-xEG" id="6z0-bJ-7Ow">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="370"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="370"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-qL-OeH" customClass="ModificationView" customModule="Social" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="8" width="343" height="354"/>
+                                                    <rect key="frame" x="16" y="8" width="382" height="354"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="o6T-yl-lbW" customClass="RoundView" customModule="Social" customModuleProvider="target">
                                                             <rect key="frame" x="5" y="5" width="64" height="64"/>
@@ -248,34 +248,25 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crazed Man" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9x-00-Drl">
-                                                            <rect key="frame" x="77" y="27" width="195" height="20"/>
+                                                            <rect key="frame" x="77" y="27.333333333333339" width="234" height="19.666666666666661"/>
                                                             <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
                                                             <color key="textColor" red="0.90196078430000004" green="0.31764705879999999" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="oUU-O7-j4s">
-                                                            <rect key="frame" x="6" y="77" width="330" height="114"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="oUU-O7-j4s">
+                                                            <rect key="frame" x="8" y="77" width="366" height="114"/>
                                                         </imageView>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-dt-ODX">
-                                                            <rect key="frame" x="7" y="199" width="327" height="105"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                        </textView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="r0w-0D-bY4">
-                                                            <rect key="frame" x="256" y="326" width="79" height="20"/>
+                                                            <rect key="frame" x="295" y="326.33333333333326" width="79" height="19.666666666666686"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgH-2s-zCM">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="39" height="20"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="39" height="19.666666666666686"/>
                                                                     <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g81-rP-aW9">
-                                                                    <rect key="frame" x="45" y="0.0" width="34" height="20"/>
+                                                                    <rect key="frame" x="45" y="0.0" width="34" height="19.666666666666686"/>
                                                                     <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -286,25 +277,40 @@
                                                             </constraints>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="167-EW-q82">
-                                                            <rect key="frame" x="274" y="5" width="64" height="64"/>
+                                                            <rect key="frame" x="313" y="5" width="64" height="64"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="64" id="dmg-rx-VI7"/>
                                                                 <constraint firstAttribute="height" constant="64" id="prc-mt-aw8"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-dt-ODX">
+                                                            <rect key="frame" x="8" y="199" width="366" height="105"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="167-EW-q82" firstAttribute="centerY" secondItem="i9x-00-Drl" secondAttribute="centerY" id="BmN-m5-XvY"/>
                                                         <constraint firstAttribute="trailing" secondItem="r0w-0D-bY4" secondAttribute="trailing" constant="8" id="C0P-Qq-12z"/>
+                                                        <constraint firstItem="oUU-O7-j4s" firstAttribute="centerY" secondItem="D4d-qL-OeH" secondAttribute="centerY" constant="-43" id="DVC-jl-RlS"/>
                                                         <constraint firstItem="i9x-00-Drl" firstAttribute="leading" secondItem="o6T-yl-lbW" secondAttribute="trailing" constant="8" id="Ixl-2d-OK5"/>
+                                                        <constraint firstItem="r0w-0D-bY4" firstAttribute="top" secondItem="gPc-dt-ODX" secondAttribute="bottom" constant="22" id="VOu-av-cv3"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gPc-dt-ODX" secondAttribute="trailing" constant="8" id="YJh-5O-JWz"/>
                                                         <constraint firstItem="167-EW-q82" firstAttribute="leading" secondItem="i9x-00-Drl" secondAttribute="trailing" constant="2" id="ekz-O3-JcH"/>
                                                         <constraint firstItem="i9x-00-Drl" firstAttribute="centerY" secondItem="o6T-yl-lbW" secondAttribute="centerY" id="fcR-g7-25z"/>
+                                                        <constraint firstItem="gPc-dt-ODX" firstAttribute="top" secondItem="oUU-O7-j4s" secondAttribute="bottom" constant="8" id="gGE-eA-iya"/>
+                                                        <constraint firstItem="oUU-O7-j4s" firstAttribute="top" secondItem="167-EW-q82" secondAttribute="bottom" constant="8" id="glV-Qp-e6o"/>
                                                         <constraint firstAttribute="bottom" secondItem="r0w-0D-bY4" secondAttribute="bottom" constant="8" id="h8L-YU-msP"/>
                                                         <constraint firstItem="o6T-yl-lbW" firstAttribute="top" secondItem="D4d-qL-OeH" secondAttribute="top" constant="5" id="he1-QC-bKo"/>
                                                         <constraint firstAttribute="trailing" secondItem="167-EW-q82" secondAttribute="trailing" constant="5" id="mE7-Ps-e48"/>
+                                                        <constraint firstItem="gPc-dt-ODX" firstAttribute="leading" secondItem="D4d-qL-OeH" secondAttribute="leading" constant="8" id="n8C-yB-wTi"/>
                                                         <constraint firstItem="167-EW-q82" firstAttribute="top" secondItem="D4d-qL-OeH" secondAttribute="top" constant="5" id="pGf-oV-nIF"/>
+                                                        <constraint firstAttribute="trailing" secondItem="oUU-O7-j4s" secondAttribute="trailing" constant="8" id="pva-pR-k9y"/>
                                                         <constraint firstItem="o6T-yl-lbW" firstAttribute="leading" secondItem="D4d-qL-OeH" secondAttribute="leading" constant="5" id="utj-Em-eTN"/>
+                                                        <constraint firstItem="oUU-O7-j4s" firstAttribute="leading" secondItem="D4d-qL-OeH" secondAttribute="leading" constant="8" id="xN7-12-zqd"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -351,7 +357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u87-t8-kD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="677.60000000000002" y="138.98050974512745"/>
+            <point key="canvasLocation" x="676.81159420289862" y="138.58695652173915"/>
         </scene>
     </scenes>
     <resources>
