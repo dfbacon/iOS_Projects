@@ -21,6 +21,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Basic setup for UITableView
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // Put/initialize listener in viewDidLoad()
+        DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            print(snapshot.value as Any)
+        })
+        
     }
 
     // Basic setup for UITableView
