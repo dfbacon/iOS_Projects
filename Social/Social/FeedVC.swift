@@ -15,6 +15,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var signOutBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
+    var posts = [Post]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,9 +26,20 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         // Put/initialize listener in viewDidLoad()
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
-            print(snapshot.value as Any)
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                for snap in snapshot {
+                    print("SNAP: \(snap)")
+                    if let postDict = snap.value as? [String: AnyObject] {
+                        let key = snap.key
+                        let post = Post(postId: key, postData: postDict)
+                        self.posts.append(post)
+                    }
+                }
+            }
+            // Finished listening, need to reload
+            self.tableView.reloadData()
         })
-        
+
     }
 
     // Basic setup for UITableView
@@ -36,11 +49,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // Basic setup for UITableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return posts.count
     }
     
     // Basic setup for UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let post = posts[indexPath.row]
+        print("DANIEL: \(post.caption)")
+        
         return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
     }
     
