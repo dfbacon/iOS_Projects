@@ -38,7 +38,8 @@ class SignInVC: UIViewController {
                 // uid comes from the user in the completion method of the sign in handler
                 // KEY_UID saved in Constants.swift
                 if let user = user {
-                    self.completeSignIn(id: user.uid)
+                    let userData = ["provider": credential.provider]
+                    self.completeSignIn(id: user.uid, userData: userData)
                 }
             }
         })
@@ -52,7 +53,8 @@ class SignInVC: UIViewController {
                 if Error == nil {
                     print("DANIEL: User authenticated with Firebase")
                     if let user = user {
-                        self.completeSignIn(id: user.uid)
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
                     }
                 } else {
                     Auth.auth().createUser(withEmail: email, password: pwd, completion: {(user, Error) in
@@ -61,7 +63,8 @@ class SignInVC: UIViewController {
                         } else {
                             print("DANIEL: Successfully authenticated with Firebase")
                             if let user = user {
-                                self.completeSignIn(id: user.uid)
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)
                             }
                         }
                     })
@@ -70,7 +73,10 @@ class SignInVC: UIViewController {
         }
     }
 
-    func completeSignIn(id: String) {
+    func completeSignIn(id: String, userData: [String: String]) {
+        
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+        
         KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("DANIEL: Data saved to keychain")
         performSegue(withIdentifier: "goToFeed", sender: nil)
