@@ -10,12 +10,14 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var signOutBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var imageAdd: RoundView!
     
     var posts = [Post]()
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Basic setup for UITableView
         tableView.delegate = self
         tableView.dataSource = self
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true // Allows for image cropping
+        imagePicker.delegate = self
         
         // Put/initialize listener in viewDidLoad()
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
@@ -64,7 +70,22 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         } else {
             return PostCell()
         }
+    }
+    
+    @IBAction func addImageTapped(_ sender: Any) {
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+
+    // Call to remove image picker after selecting image
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+            imageAdd.image = image
+        } else {
+            print("DANIEL: A valid image wasn't selected")
+        }
         
+        imagePicker.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func signOutPressed(_ sender: Any) {

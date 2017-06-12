@@ -24,6 +24,7 @@ class RoundView: UIImageView {
         super.layoutSubviews()
 
         layer.cornerRadius = self.frame.width / 2
+        clipsToBounds = true
     }
     
 //    override func draw(_ rect: CGRect) {
