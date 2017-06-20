@@ -21,19 +21,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXA-oE-ITP" userLabel="PreviewView" customClass="AAPLPreviewView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXt-B0-BNU" userLabel="PreviewView" customClass="AAPLPreviewView" customModule="DevChat" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DXA-oE-ITP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5o1-Qo-2ft"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DXA-oE-ITP" secondAttribute="bottom" id="W93-GM-SxS"/>
-                            <constraint firstAttribute="trailing" secondItem="DXA-oE-ITP" secondAttribute="trailing" id="b4J-ec-7td"/>
-                            <constraint firstItem="DXA-oE-ITP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pBh-Se-nS8"/>
+                            <constraint firstItem="XXt-B0-BNU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CKj-HG-ckT"/>
+                            <constraint firstAttribute="trailing" secondItem="XXt-B0-BNU" secondAttribute="trailing" id="dzR-7y-Tnd"/>
+                            <constraint firstItem="XXt-B0-BNU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hSk-1K-KSi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XXt-B0-BNU" secondAttribute="bottom" id="sAU-XC-skQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="previewView" destination="XXt-B0-BNU" id="ppj-1x-2aD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
