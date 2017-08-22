@@ -66,11 +66,14 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
             
-            // RESUME LECTURE AT 24:00 HERE
+            if let img = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
+                cell.configureCell(post: post, img: img)
+                return cell
+            } else {
+                cell.configureCell(post: post)
+                return cell
+            }
             
-            cell.configureCell(post: post)
-            return cell
-        
         } else {
             return PostCell()
         }

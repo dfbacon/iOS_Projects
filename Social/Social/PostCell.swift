@@ -26,7 +26,7 @@ class PostCell: UITableViewCell {
         // Initialization code
     }
 
-    func configureCell(post: Post, img: UIImage?) {
+    func configureCell(post: Post, img: UIImage? =  nil) {
         self.post = post
         self.caption.text = post.caption
         self.likes.text = String(post.likes)
@@ -44,7 +44,7 @@ class PostCell: UITableViewCell {
                     if let imageData = data {
                         if let img = UIImage(data: imageData) {
                             self.postImage.image = img
-                            FeedVC.imageCache.setObject(img, forKey: post.imageUrl as AnyObject)
+                            FeedVC.imageCache.setObject(img, forKey: (post.imageUrl as AnyObject) as! NSString)
                         }
                     }
                 }
