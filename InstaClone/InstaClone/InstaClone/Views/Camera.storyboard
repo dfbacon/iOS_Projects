@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera-->
+        <scene sceneID="k9j-4H-lqG">
+            <objects>
+                <viewController id="IFP-8A-AeV" customClass="CameraVC" customModule="InstaClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gs5-L1-C6m"/>
+                        <viewControllerLayoutGuide type="bottom" id="omH-0v-Rb9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lXq-g3-oXa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeU-G9-i8t">
+                                <rect key="frame" x="0.0" y="64" width="375" height="125"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="BiY-ze-U8e">
+                                        <rect key="frame" x="8" y="27" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="BiY-ze-U8e" secondAttribute="height" multiplier="1:1" id="ITh-ag-GVz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t9z-fs-pHf" userLabel="Caption Text View">
+                                        <rect key="frame" x="86" y="8" width="281" height="109"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="BiY-ze-U8e" firstAttribute="leading" secondItem="NeU-G9-i8t" secondAttribute="leading" constant="8" id="HPL-Na-fD5"/>
+                                    <constraint firstAttribute="bottom" secondItem="BiY-ze-U8e" secondAttribute="bottom" constant="28" id="bZw-uR-FDD"/>
+                                    <constraint firstAttribute="width" secondItem="NeU-G9-i8t" secondAttribute="height" multiplier="3:1" id="jjJ-oF-qQi"/>
+                                    <constraint firstItem="BiY-ze-U8e" firstAttribute="top" secondItem="NeU-G9-i8t" secondAttribute="top" constant="27" id="oLr-R6-SqR"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ea2-gu-tnf" userLabel="Share Button">
+                                <rect key="frame" x="24" y="595" width="327" height="64"/>
+                                <color key="backgroundColor" red="0.64705882349999999" green="0.83921568629999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ea2-gu-tnf" secondAttribute="height" multiplier="327:64" id="phF-r1-9Gu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shareButtonPressed:" destination="IFP-8A-AeV" eventType="touchUpInside" id="BsT-br-HJU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ea2-gu-tnf" secondAttribute="trailing" constant="8" id="KHh-FK-Qdp"/>
+                            <constraint firstAttribute="trailing" secondItem="NeU-G9-i8t" secondAttribute="trailing" id="Kr4-l5-2XO"/>
+                            <constraint firstItem="NeU-G9-i8t" firstAttribute="leading" secondItem="lXq-g3-oXa" secondAttribute="leading" id="R5F-cW-1TO"/>
+                            <constraint firstItem="omH-0v-Rb9" firstAttribute="top" secondItem="Ea2-gu-tnf" secondAttribute="bottom" constant="8" id="VhL-pu-mug"/>
+                            <constraint firstItem="Ea2-gu-tnf" firstAttribute="leading" secondItem="lXq-g3-oXa" secondAttribute="leadingMargin" constant="8" id="d7f-Qb-bdh"/>
+                            <constraint firstItem="NeU-G9-i8t" firstAttribute="top" secondItem="gs5-L1-C6m" secondAttribute="bottom" id="mD8-Sb-Z2L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera" id="7cJ-41-Rl9">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="Htl-dK-lQf" userLabel="Clear Button">
+                            <connections>
+                                <action selector="clearButtonPressed:" destination="IFP-8A-AeV" id="0Td-zA-GIu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="captionTextView" destination="t9z-fs-pHf" id="amF-7Y-3Zc"/>
+                        <outlet property="clearButton" destination="Htl-dK-lQf" id="aaF-Oj-D7B"/>
+                        <outlet property="photoImageView" destination="BiY-ze-U8e" id="baj-oQ-veq"/>
+                        <outlet property="shareButton" destination="Ea2-gu-tnf" id="sa3-FF-PrK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sfO-vh-XEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.5999999999999996" y="64.31784107946028"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9qI-9c-Z3d">
+            <objects>
+                <navigationController id="OyQ-6h-pQB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="raU-Rv-obU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IFP-8A-AeV" kind="relationship" relationship="rootViewController" id="z0A-CW-3D0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vE-Ja-41u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-943" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Photo" width="22" height="23"/>
+    </resources>
+</document>
