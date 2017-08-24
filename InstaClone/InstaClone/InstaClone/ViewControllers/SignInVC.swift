@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SignInVC.swift
 //  InstaClone
 //
 //  Created by Daniel Bacon on 8/22/17.
@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import Firebase
 
-class ViewController: UIViewController {
+class SignInVC: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var SignInButton: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

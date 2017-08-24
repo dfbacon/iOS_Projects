@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BeD-Un-D6I">
+            <objects>
+                <tabBarController id="pRP-a8-VNO" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6lg-Ma-n6p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jaQ-jb-OUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-327" y="118"/>
+        </scene>
+        <!--NavigationWall-->
+        <scene sceneID="Pgb-ag-PoU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Wall" referencedIdentifier="NavigationWall" id="sKB-cA-FQR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hKE-XP-k0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="-197"/>
+        </scene>
+        <!--NavigationCamera-->
+        <scene sceneID="fls-2o-Ug5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Camera" referencedIdentifier="NavigationCamera" id="aZg-5W-P7J" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VDQ-lH-pR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="20"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="an4-bj-cCa">
+            <objects>
+                <viewControllerPlaceholder id="xMo-pK-YVr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhG-LD-EFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="231"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="anl-Yp-RnV">
+            <objects>
+                <viewControllerPlaceholder id="jT3-pi-Phe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M44-ZO-gQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="405"/>
+        </scene>
+    </scenes>
+</document>
