@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="625" y="20"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--NavigationProfile-->
         <scene sceneID="an4-bj-cCa">
             <objects>
-                <viewControllerPlaceholder id="xMo-pK-YVr" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="NavigationProfile" id="xMo-pK-YVr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhG-LD-EFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="625" y="231"/>

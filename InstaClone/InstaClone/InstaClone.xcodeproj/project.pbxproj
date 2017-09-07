@@ -14,6 +14,8 @@
 		057035BD1F4E223D00E345CC /* CommentTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057035BC1F4E223D00E345CC /* CommentTableCell.swift */; };
 		057035BF1F4E351000E345CC /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057035BE1F4E351000E345CC /* Camera.storyboard */; };
 		057035C21F4E3D3C00E345CC /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057035C11F4E3D3C00E345CC /* CameraVC.swift */; };
+		058894D91F4F57C70084B360 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058894D81F4F57C70084B360 /* ProfileVC.swift */; };
+		058894DB1F4F58020084B360 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058894DA1F4F58020084B360 /* Profile.storyboard */; };
 		05E00B6C1F4CAB1900D4D552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E00B6B1F4CAB1900D4D552 /* AppDelegate.swift */; };
 		05E00B6E1F4CAB1900D4D552 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E00B6D1F4CAB1900D4D552 /* SignInVC.swift */; };
 		05E00B711F4CAB1900D4D552 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E00B6F1F4CAB1900D4D552 /* SignIn.storyboard */; };
@@ -34,6 +36,8 @@
 		057035BC1F4E223D00E345CC /* CommentTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableCell.swift; sourceTree = "<group>"; };
 		057035BE1F4E351000E345CC /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		057035C11F4E3D3C00E345CC /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		058894D81F4F57C70084B360 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		058894DA1F4F58020084B360 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		05E00B681F4CAB1900D4D552 /* InstaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E00B6B1F4CAB1900D4D552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05E00B6D1F4CAB1900D4D552 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 				05E00B8D1F4CD71200D4D552 /* TabBar.storyboard */,
 				057035B41F4DF30900E345CC /* Wall.storyboard */,
 				057035BE1F4E351000E345CC /* Camera.storyboard */,
+				058894DA1F4F58020084B360 /* Profile.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 				057035B81F4E1F4C00E345CC /* CommentVC.swift */,
 				057035BC1F4E223D00E345CC /* CommentTableCell.swift */,
 				057035C11F4E3D3C00E345CC /* CameraVC.swift */,
+				058894D81F4F57C70084B360 /* ProfileVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -221,6 +227,7 @@
 				05E00B811F4CB06D00D4D552 /* GoogleService-Info.plist in Resources */,
 				05E00B851F4CC99000D4D552 /* ProgressHUD in Resources */,
 				057035B51F4DF30900E345CC /* Wall.storyboard in Resources */,
+				058894DB1F4F58020084B360 /* Profile.storyboard in Resources */,
 				05E00B761F4CAB1900D4D552 /* Assets.xcassets in Resources */,
 				05E00B711F4CAB1900D4D552 /* SignIn.storyboard in Resources */,
 			);
@@ -281,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				058894D91F4F57C70084B360 /* ProfileVC.swift in Sources */,
 				057035BB1F4E214D00E345CC /* WallTableCell.swift in Sources */,
 				057035C21F4E3D3C00E345CC /* CameraVC.swift in Sources */,
 				057035B91F4E1F4C00E345CC /* CommentVC.swift in Sources */,
